@@ -8,9 +8,9 @@ function verificarChute(){
         chute = document.getElementById("reiniciar").removeAttribute("disabled");
     }else
         if(chute > numeroSecreto){
-            preencherCampo("p", "O número secreto é menor");
+            preencherCampo("p", `O número secreto é menor que ${chute}`);
         } else{
-            preencherCampo("p", "O número secreto é maior");
+            preencherCampo("p", `O número secreto é maior que ${chute}`);
         }
         tentativas++;
         limparCampo();
