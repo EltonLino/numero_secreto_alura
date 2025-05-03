@@ -24,11 +24,11 @@ function preencherCampo(tag, texto){
 
 function gerarNumeroAleatorio(){    
     let quantidadeNumerosNaLista = numerosSorteados.length;
-    if (quantidadeNumerosNaLista == 10){
+    if (quantidadeNumerosNaLista == 100){
         numerosSorteados = [];
     }
 
-    numeroEscolhido =  parseInt(Math.random() * 10 + 1);
+    numeroEscolhido =  parseInt(Math.random() * 100 + 1);
 
     if (numerosSorteados.includes(numeroEscolhido)){
         return gerarNumeroAleatorio();
@@ -54,7 +54,7 @@ function reiniciar() {
 
 function iniciarJogo() {
     preencherCampo("h1", "Jogo do número secreto");
-    preencherCampo("p", "Escolha um número entre 1 e 10");   
+    preencherCampo("p", "Escolha um número entre 1 e 100");   
 }
 
 let numerosSorteados = [];
