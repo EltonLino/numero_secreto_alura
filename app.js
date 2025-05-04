@@ -4,7 +4,7 @@ function verificarChute(){
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
 
         preencherCampo('h1', "Acertou!");
-        preencherCampo("p", `Parabéns você acertou o numero secreto com ${tentativas} ${palavraTentativa}`);
+        preencherCampo("p", `Parabéns! Você acertou o numero secreto com ${tentativas} ${palavraTentativa}`);
         chute = document.getElementById("reiniciar").removeAttribute("disabled");
     }else
         if(chute > numeroSecreto){
